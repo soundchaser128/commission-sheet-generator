@@ -21,7 +21,6 @@ import reactCropStyles from "react-image-crop/dist/ReactCrop.css"
 import iconStyles from "@fortawesome/fontawesome-svg-core/styles.css"
 import {config} from "@fortawesome/fontawesome-svg-core"
 import ThemeToggle from "./components/ThemeToggle"
-import {authenticator} from "./service/auth.server"
 import type {User} from "@supabase/supabase-js"
 import {supabase} from "./service/supabase.server"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
@@ -57,11 +56,11 @@ type Data = {
 }
 
 export const loader: LoaderFunction = async ({request}) => {
-  const session = await authenticator.isAuthenticated(request)
-  const user = await supabase.auth.getUser(session?.access_token)
+  // const session = await authenticator.isAuthenticated(request)
+  // const user = await supabase.auth.getUser(session?.access_token)
 
   return {
-    user: user?.data?.user,
+    // user: user?.data?.user,
     env: {
       PUBLIC_SUPABASE_URL: process.env.PUBLIC_SUPABASE_URL,
       PUBLIC_SUPABASE_ANON_KEY: process.env.PUBLIC_SUPABASE_ANON_KEY,

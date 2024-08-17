@@ -397,7 +397,7 @@ export default function Index() {
             <button
               id="download-button"
               onClick={createScreenshot}
-              className="btn btn-success flex-auto"
+              className="btn-success btn flex-auto"
               disabled={rendering}
               type="button"
             >
@@ -420,7 +420,7 @@ export default function Index() {
             <button
               id="publish-button"
               className={clsx(
-                "btn btn-success flex-auto",
+                "btn-success btn flex-auto",
                 !user && "btn-disabled"
               )}
               type="submit"
@@ -433,7 +433,7 @@ export default function Index() {
         <button
           id="reset-button"
           onClick={onResetData}
-          className="btn btn-error mx-2 mt-2 w-auto self-end"
+          className="btn-error btn mx-2 mt-2 w-auto self-end"
         >
           <FontAwesomeIcon className="mr-2" icon={faTrash} /> Reset
         </button>

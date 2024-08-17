@@ -63,7 +63,7 @@ const CardTemplate: React.FC<CommissionSheet> = ({
     <div
       id="preview-frame"
       className={clsx(
-        "container flex w-auto flex-col items-center justify-center gap-8 py-8 px-12 shadow-lg",
+        "container flex w-auto flex-col items-center justify-center gap-8 px-12 py-8 shadow-lg",
         backgroundColor,
         textColors.base
       )}

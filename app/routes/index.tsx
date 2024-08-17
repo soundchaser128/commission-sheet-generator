@@ -27,13 +27,13 @@ export default () => (
           </p>
           <div className="flex w-full gap-2">
             <Link
-              className="btn btn-primary flex-auto"
+              className="btn-primary btn flex-auto"
               to="/create/commission-sheet"
             >
               <FontAwesomeIcon icon={faPaintBrush} className="mr-1" />
               Commission sheet generator
             </Link>
-            <Link className="btn btn-primary flex-auto" to="/create/banner">
+            <Link className="btn-primary btn flex-auto" to="/create/banner">
               <FontAwesomeIcon icon={faTwitter} className="mr-1" />
               Banner generator
             </Link>
